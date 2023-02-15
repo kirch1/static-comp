@@ -18,13 +18,25 @@ nav {
     align-items: center;
     background-color: #0A558F;
     width: 200px;
-    padding: 24px;
 }
 
 nav img {
     width: 100%;
     border: #222222;
     border-style: solid;
+    border-width: 1px;
+}
+
+nav figcaption {
+    color: whitesmoke;
+    text-align: center;
+}
+
+nav section{
+    border-top-style: solid;
+    border-color: #222222;
+    height: 200px;
+    width: 100%;
 }
 
 .trim {
@@ -33,7 +45,7 @@ nav img {
     border-color: #222222;
     border-left-style: solid;
     border-right-style: solid;
-    border-width: 2px;
+    border-width: 1px;
 }
 
 main {
@@ -41,4 +53,40 @@ main {
     background-color: #D0BFB4;
 }
 
+header {
+    display: flex;
+    background-color: #F2F2F2;
+    height: 65px;
+    border-bottom-style: solid;
+    border-color: #222222;
+    border-width: 1px;
+}
 
+header input {
+    flex-grow: 1;
+    padding-left: 1vw;
+    border-style: none;
+    outline: none;
+    font-size: larger;
+    font-weight: 100;
+    background-color: #F2F2F2;
+}
+
+.input-icon {
+    background-color: #F2F2F2;
+    padding-left: 1vw;
+    display: flex;
+    align-items: center;
+}
+
+header button {
+    width: 65px;
+    border-style: none;
+    background-color: #F2F2F2;
+}
+
+.left-border {
+    border-left-style: solid;
+    border-left-color: #222222;
+    border-width: 1px;
+}
