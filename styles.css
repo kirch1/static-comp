@@ -9,7 +9,7 @@ body {
     margin: 0;
     display: flex;
     height: 100vh;
-  }
+}
 
 nav {
     flex-shrink: 0;
@@ -33,7 +33,7 @@ nav img {
 }
 
 nav figcaption {
-    color: whitesmoke;
+    color: #F2F2F2;
     text-align: center;
     padding-top: 10px;
 }
@@ -56,7 +56,7 @@ nav > section{
 nav button {
     background-color: rgba(0, 0, 0, 0);
     border-style: none;
-    color: whitesmoke;
+    color: #F2F2F2;
     display: flex;
     gap: 1.2vw;
     align-items: center;
@@ -77,8 +77,9 @@ i {
     border-color: #D41C2B;
 }
 
-nav button:hover {
+button:hover {
     background-color: #0683AC;
+    cursor: pointer;
 }
 
 .trim {
@@ -91,11 +92,13 @@ nav button:hover {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
     background-color: #D0BFB4;
 }
 
-header {
+.search-area {
     display: flex;
     background-color: #F2F2F2;
     height: 60px;
@@ -104,7 +107,7 @@ header {
     border-width: 1px;
 }
 
-header input {
+.search-area input {
     flex-grow: 1;
     padding-left: 1vw;
     border-style: none;
@@ -121,8 +124,9 @@ header input {
     align-items: center;
 }
 
-header button {
-    width: 60px;
+main section button {
+    color: #222222;
+    width: 65px;
     border-style: none;
     background-color: #F2F2F2;
 }
@@ -131,4 +135,57 @@ header button {
     border-left-style: solid;
     border-left-color: #222222;
     border-width: 1px;
+}
+
+.card-header {
+    display: flex;
+    padding: 4vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1, h3 {
+    font-weight: 500;
+    margin: 0;
+}
+
+.card-header-buttons {
+    display: flex;
+    gap: 0.5vw;
+    justify-content: end;
+}
+
+.card-header button {
+    color: #222222;
+    height: 34px;
+    width: 34px;
+    border-radius: 17px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #222222;
+    font-size: 17px;
+}
+
+.card-header button:hover {
+    background-color: #0683AC;
+}
+
+.card-header span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.card-header .button-large {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.tab-strip {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 40px;
 }
