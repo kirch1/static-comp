@@ -2,7 +2,7 @@
 *:before,
 *:after {
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 body {
@@ -17,11 +17,12 @@ nav {
     flex-direction: column;
     background-color: #0A558F;
     width: 200px;
-    overflow: auto;
+    overflow: hidden;
 }
 
 nav figure {
-    margin: 15%;
+    margin-left: 18%;
+    margin-right: 18%;
 }
 
 nav img {
@@ -36,6 +37,7 @@ nav figcaption {
     color: #F2F2F2;
     text-align: center;
     padding-top: 10px;
+    font-size: 14px;
 }
 
 nav label {
@@ -100,8 +102,9 @@ main {
 
 .search-area {
     display: flex;
+    flex-shrink: 0;
     background-color: #F2F2F2;
-    height: 60px;
+    height: 80px;
     border-bottom-style: solid;
     border-color: #222222;
     border-width: 1px;
@@ -126,7 +129,7 @@ main {
 
 main section button {
     color: #222222;
-    width: 65px;
+    width: 80px;
     border-style: none;
     background-color: #F2F2F2;
 }
@@ -138,32 +141,45 @@ main section button {
 }
 
 .card-header {
+    background-color: #F2F2F2;
     display: flex;
-    padding: 4vw;
+    padding: 40px 40px 35px 40px;
     justify-content: space-between;
     align-items: center;
 }
 
+.card-header-img {
+    height: 200px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
 h1, h3 {
-    font-weight: 500;
+    font-weight: 400;
     margin: 0;
 }
 
 .card-header-buttons {
     display: flex;
-    gap: 0.5vw;
+    gap: 18px;
     justify-content: end;
 }
 
 .card-header button {
     color: #222222;
-    height: 34px;
-    width: 34px;
-    border-radius: 17px;
+    height: 36px;
+    width: 36px;
+    border-radius: 18px;
     border-style: solid;
     border-width: 1px;
     border-color: #222222;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .card-header button:hover {
@@ -176,7 +192,7 @@ h1, h3 {
 }
 
 .card-header .button-large {
-    width: 100px;
+    width: 85px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -184,8 +200,85 @@ h1, h3 {
 }
 
 .tab-strip {
-    width: 100%;
+    background-color: #F2F2F2;
     display: flex;
-    flex-direction: row;
-    height: 40px;
+    gap: 50px;
+    height: 55px;
+    padding-left: 4vw;
+}
+
+.tab-button {
+    color: #22222270;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 12px;
+    width: auto;
+    padding: 0;
+}
+
+.tab-button:hover {
+    background-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    padding-top: 3px;
+    border-color: #0A558F;
+}
+
+.tab-button-selected {
+    color: #222222;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    padding-top: 3px;
+    border-color: #0A558F;
+}
+
+.stats {
+    padding: 45px;
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pies {
+    display: flex;
+    gap: 30px;
+}
+
+.pie-wrapper{
+    margin: 0px;
+}
+
+.pies-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.bar-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+    gap: 10px;
+}
+
+#myChart{
+    width: 360px;
+}
+
+.data-label {
+    display: flex;
+    color: #222222;
+    align-items: center;
+    height: 38px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #F2F2F290;
+    border-radius: 19px;
+    border-style: solid;
+    border-color: #22222270;
+    font-size: 12px;
+    font-weight: 700;
 }
