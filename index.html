@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="pie.css">
     <link rel="stylesheet" href="styles.css">
     <title>Static Comp</title>
 </head>
@@ -63,15 +63,61 @@
                 <button class="material-icons">delete</button>
             </div>
         </header>
-        <nav class="tab-strip">
-            <button class="tab-button">SUMMARY</button>
-            <button class="tab-button">SUMMARY</button>
-            <button class="tab-button">SUMMARY</button>
-            <button class="tab-button">SUMMARY</button>
-            <button class="tab-button">SUMMARY</button>
-            <button class="tab-button">SUMMARY</button>
-            <button class="tab-button">SUMMARY</button>
-        </nav>
+        <section class="tab-strip">
+            <button class="tab-button tab-button-selected">SUMMARY</button>
+            <button class="tab-button">GRADING</button>
+            <button class="tab-button">VALUE</button>
+            <button class="tab-button">SOCIAL</button>
+            <button class="tab-button">HISTORY</button>
+            <button class="tab-button">EBAY</button>
+            <button class="tab-button">NOTIFICATIONS</button>
+        </section>
+        <section class="stats">
+            <div class="pies-section">
+                <div class="pies">
+                    <div class="set-size charts-container">
+                        <div class="pie-wrapper progress-95 style-2">
+                        <span class="label">8453</span>
+                        <span class="label smaller">GRADE 8</span>
+                        <div class="pie">
+                            <div class="left-side half-circle"></div>
+                            <div class="right-side half-circle"></div>
+                        </div>
+                        <div class="shadow"></div>
+                        </div>
+                    </div>
+                    <div class="set-size charts-container">
+                        <div class="pie-wrapper progress-75 style-2">
+                        <span class="label">2900</span>
+                        <span class="label smaller">GRADE 9</span>
+                        <div class="pie">
+                            <div class="left-side half-circle"></div>
+                            <div class="right-side half-circle"></div>
+                        </div>
+                        <div class="shadow"></div>
+                        </div>
+                    </div>
+                    <div class="set-size charts-container">
+                        <div class="pie-wrapper progress-45 style-2">
+                        <span class="label">319</span>
+                        <span class="label smaller">GRADE 10</span>
+                        <div class="pie">
+                            <div class="left-side half-circle"></div>
+                            <div class="right-side half-circle"></div>
+                        </div>
+                        <div class="shadow"></div>
+                        </div>
+                    </div>
+                </div>
+                <p class="data-label">TOTALS - Out of 22,267 graded cards</p>
+            </div>
+            <div class="bar-section">
+                <canvas id="myChart"></canvas>
+                <p class="data-label">GRADE 10 RECENT SALES</p>
+            </div>
+        </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="chart.js"></script>
 </body>
 </html>
