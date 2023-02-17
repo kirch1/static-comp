@@ -102,6 +102,7 @@ main {
 
 .search-area {
     display: flex;
+    flex-shrink: 0;
     background-color: #F2F2F2;
     height: 80px;
     border-bottom-style: solid;
@@ -145,6 +146,10 @@ main section button {
     padding: 40px 40px 35px 40px;
     justify-content: space-between;
     align-items: center;
+}
+
+.card-header-img {
+    height: 200px;
 }
 
 h1 {
@@ -197,7 +202,7 @@ h1, h3 {
 .tab-strip {
     background-color: #F2F2F2;
     display: flex;
-    gap: 3vw;
+    gap: 50px;
     height: 55px;
     padding-left: 4vw;
 }
