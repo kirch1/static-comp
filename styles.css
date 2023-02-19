@@ -5,24 +5,56 @@
   font-family: 'Noto Sans', sans-serif;
 }
 
+.light-text {
+    color: #FFF8F0;
+}
+
+.mid-text {
+    color: #949a9d;
+}
+
+.dark-text {
+    color: #222222;
+}
+
+.light-bg {
+    background-color: #FFF8F0;
+}
+
+a {
+    color: #0A558F;
+    text-decoration: none;
+}
+
+.blue-bg {
+    background-color: #0A558F;
+}
+
+.light-blue-bg {
+    background-color: #0683AC;
+}
+
+.yellow-bg {
+    background-color: #D4AF40;
+}
+
 body {
     margin: 0;
     display: flex;
-    height: 100vh;
+    overflow: auto;
 }
 
 nav {
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
-    background-color: #0A558F;
     width: 200px;
     overflow: hidden;
 }
 
 nav figure {
-    margin-left: 18%;
-    margin-right: 18%;
+    margin-left: 22%;
+    margin-right: 22%;
 }
 
 nav img {
@@ -34,59 +66,59 @@ nav img {
 }
 
 nav figcaption {
-    color: #F2F2F2;
     text-align: center;
     padding-top: 10px;
     font-size: 14px;
 }
 
 nav label {
-    color: rgba(255, 255, 255, 0.7);
+    opacity: 70%;
     margin: 6px;
     margin-left: 14px;
+    font-size: 12px;
 }
 
 nav > section{
     border-top-style: solid;
     border-color: rgba(255, 255, 255, 0.1);
     padding-top: 12px;
-    padding-bottom: 12px;
+    padding-bottom: 24px;
     display: flex;
     flex-direction: column;
 }
 
 nav button {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
     border-style: none;
-    color: #F2F2F2;
     display: flex;
-    gap: 1.2vw;
+    gap: 16px;
     align-items: center;
     text-transform: uppercase;
-    height: 36px;
-    padding-left: 1vw;
+    height: 40px;
+    padding-left: 12px;
+    font-size: 12px;
     border-left-style: solid;
     border-width: 4px;
-    border-color: rgba(0, 0, 0, 0);
+    border-left-color: transparent;
 }
 
 i {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .nav-button-selected {
-    background-color: #0683AC;
     border-color: #D41C2B;
+    border-left-style: solid;
+    border-width: 4px;
 }
 
-button:hover {
+nav button:hover {
     background-color: #0683AC;
     cursor: pointer;
 }
 
 .trim {
     width: 6px;
-    background-color: #D4AF40;
     border-color: #222222;
     border-left-style: solid;
     border-right-style: solid;
@@ -97,13 +129,12 @@ main {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    background-color: #D0BFB4;
+    background-color: #e6dfd8;
 }
 
 .search-area {
     display: flex;
     flex-shrink: 0;
-    background-color: #F2F2F2;
     height: 80px;
     border-bottom-style: solid;
     border-color: #222222;
@@ -115,23 +146,19 @@ main {
     padding-left: 1vw;
     border-style: none;
     outline: none;
-    font-size: larger;
+    font-size: 16px;
     font-weight: 100;
-    background-color: #F2F2F2;
 }
 
 .input-icon {
-    background-color: #F2F2F2;
     padding-left: 1vw;
     display: flex;
     align-items: center;
 }
 
-main section button {
-    color: #222222;
+.search-area-button {
     width: 80px;
     border-style: none;
-    background-color: #F2F2F2;
 }
 
 .left-border {
@@ -141,7 +168,6 @@ main section button {
 }
 
 .card-header {
-    background-color: #F2F2F2;
     display: flex;
     padding: 40px 40px 35px 40px;
     justify-content: space-between;
@@ -149,7 +175,7 @@ main section button {
 }
 
 .card-header-img {
-    height: 200px;
+    height: 120px;
 }
 
 h1 {
@@ -171,8 +197,7 @@ h1, h3 {
     justify-content: end;
 }
 
-.card-header button {
-    color: #222222;
+.card-header button, .divider-button {
     height: 36px;
     width: 36px;
     border-radius: 18px;
@@ -182,8 +207,9 @@ h1, h3 {
     font-size: 16px;
 }
 
-.card-header button:hover {
-    background-color: #0683AC;
+main button:hover {
+    background-color: #949a9d;
+    cursor: pointer;
 }
 
 .card-header span {
@@ -200,20 +226,18 @@ h1, h3 {
 }
 
 .tab-strip {
-    background-color: #F2F2F2;
     display: flex;
     gap: 50px;
     height: 55px;
-    padding-left: 4vw;
+    padding-left: 40px;
 }
 
 .tab-button {
-    color: #22222270;
     background-color: transparent;
     font-weight: bold;
-    font-size: 12px;
-    width: auto;
+    font-size: 13px;
     padding: 0;
+    border-style: none;
 }
 
 .tab-button:hover {
@@ -225,7 +249,6 @@ h1, h3 {
 }
 
 .tab-button-selected {
-    color: #222222;
     border-bottom-style: solid;
     border-bottom-width: 3px;
     padding-top: 3px;
@@ -269,16 +292,112 @@ h1, h3 {
 
 .data-label {
     display: flex;
-    color: #222222;
     align-items: center;
     height: 38px;
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: #F2F2F290;
     border-radius: 19px;
     border-style: solid;
     border-color: #22222270;
     font-size: 12px;
     font-weight: 700;
+}
+
+.divider {
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    gap: 6px;
+}
+
+.line {
+    height: 2px;
+    background-color: #222222;
+    flex-grow: 1;
+}
+
+.bottom-info {
+    padding: 40px;
+    flex-shrink: 0;
+    display: flex;
+    gap: 55px;
+    height: 1000px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.description-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 35px;
+    height: 75px;
+}
+
+.description-header p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.description-header button{
+    border-style: none;
+    height: 32px;
+    width: 70px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+tr {
+    height: 75px;
+    border-bottom-style: solid;
+    border-bottom-color: #222222;
+    border-width: 1px;
+}
+
+.col1 {
+    font-weight: bold;
+    width: 142px;
+    font-size: 13px;
+}
+
+.social {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 275px;
+}
+
+.social-button {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 50px;
+    border-style: none;
+    border-radius: 4px;
+    font-size: 24px;
+}
+
+.social button span {
+    font-size: 14px;
+    font-weight: bold;
+    margin: auto;
 }
