@@ -114,14 +114,14 @@ $label-font-size-redo: $default-size * 4;
   }
 
   .smaller {
-    color: #585858;
+    color: #999590;
     font-size: .09em;
     padding-top: 75px;
   }
 
   .shadow {
     @include size(100%, 100%);
-    border: $default-size / 15 solid #949a9d;
+    border: $default-size / 15 solid #999590;
     border-radius: 50%;
   }
 

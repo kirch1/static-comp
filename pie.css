@@ -59,14 +59,14 @@
   top: 0.4em;
 }
 .pie-wrapper .smaller {
-  color: #585858;
+  color: #999590;
   font-size: 0.09em;
   padding-top: 75px;
 }
 .pie-wrapper .shadow {
   height: 100%;
   width: 100%;
-  border: 0.0666666667em solid #949a9d;
+  border: 0.0666666667em solid #999590;
   border-radius: 50%;
 }
 .pie-wrapper.style-2 .label {
